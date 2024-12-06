@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+
+nav .container-fluid{
+    margin: 0;
+    /* border: 1px solid black; */
+    background-color: white !important;
+}
+.logo{
+    /* border: 1px solid black; */
+}
+
+.logo img{
+    height: 80px;
+    width: auto;
+    margin: 20px 0;
+}
+
+.icons{
+    /* border: 1px solid black; */
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon{
+    /* border: 1px solid black; */
+}
+
+.icon i{
+    height: 100%;
+    width: 100%;
+    font-size: 1.3rem;
+
+}
+
+@media screen and (width<1000px){
+    #navbarNav{
+        flex-direction: column;
+    }
+}
+/* banner */
+
+.banner{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    margin: 0;
+    background-image: url('./Fashion-Web-Banner-11.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* middle section */
+
+.middle_section{
+    padding: 50px;
+    /* border: 1px solid black; */
+}
+
+.middle_section_header{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    display: grid;
+    place-items: center;
+}
+
+.middle_section_header h1{
+   font-size: 5rem;
+
+}
+
+#middle_section{
+    /* border: 1px solid black; */
+    height: 800px;
+    background-color: rgb(238, 236, 236);
+    border-radius: 20px;
+}
+
+#middle_section .row{
+    /* border: 1px solid black; */
+    height: 100%;
+}
+
+#middle_section .row div{
+    /* border: 1px solid black */
+}
+
+#middle_section .row div img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.middle_section_text{
+    display: grid;
+    grid-template-rows: 10% 20% 45% 20%;
+    grid-gap: 2%;
+    padding: 20px;
+}
+
+.middle_section_text :nth-child(4){
+    background: #2c3e50;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#middle_section_cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#middle_section_cards div{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#middle_section_cards div :nth-child(1){
+    color: rgb(17, 113, 151);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.delta :nth-child(1){
+    color: gray;
+}
+#middle_section_cards div{
+    height: 95%;
+    width: 30%;
+}
+@media screen and (width<700px){
+
+    #middle_section{
+        
+    }
+    .middle_section_header h1{
+        font-size: 3rem;
+    }
+
+    .middle_section_text{
+        height: 1300px;
+        /* background-color: red; */
+        grid-template-rows: 5% 15% 55% 20%;
+    }
+
+    #middle_section_cards{
+        flex-direction: column;
+        /* background-color: blue; */
+        justify-content: space-around;
+    }
+    #middle_section_cards div{
+         height: auto;
+    }
+
+    #middle_section_cards div{
+        width: 100%;
+    }
+
+    .middle_section{
+        padding: 30px;
+    }
+}
+
+/* range */
+
+.range{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 20px;
+    gap: 20px;
+}
+
+.range_card{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+ 
+}
+
+@media screen and (width<1000px) {
+    .range{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (width<768px){
+    .range{
+        margin-top: 1000px;
+    }
+}
